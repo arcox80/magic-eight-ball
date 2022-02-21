@@ -10,8 +10,6 @@ function getUserName() {
   } else {
     console.log(`Hello!`);
   };
-  getQuestion();
-  showAnswer();
 }
 
 function getQuestion() {
@@ -30,6 +28,8 @@ function getQuestion() {
 }
 
 function showAnswer() {
+  getUserName();
+  getQuestion();
   switch(randomNumber) {
     case 0:
       eightBall = 'It is certain';
@@ -59,4 +59,4 @@ function showAnswer() {
   return console.log(eightBall);
 }
 
-getUserName();
+showAnswer();
