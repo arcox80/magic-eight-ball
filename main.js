@@ -24,7 +24,6 @@ function getQuestion() {
       console.log(`You need to ask a question!`);
       getQuestion();
     }
-  return userQuestion;
 }
 
 function showAnswer() {
