@@ -5,21 +5,13 @@ const randomNumber = Math.floor(Math.random() * 8);
 
 function getUserName() {
   userName = window.prompt(`Please enter your name:`);
-  if (userName) {
-    console.log(`Hello ${userName}!`);
-  } else {
-    console.log(`Hello!`);
-  };
+  userName ? console.log(`Hello ${userName}!`) : console.log(`Hello!`);
 }
 
 function getQuestion() {
   userQuestion = window.prompt(`What is your question?`);
   if (userQuestion) {
-    if (userName) {
-      console.log(`${userName} asked "${userQuestion}"`);
-    } else {
-      console.log(`You asked, "${userQuestion}"`);
-    };
+    userName ? console.log(`${userName} asked "${userQuestion}"`) : console.log(`You asked, "${userQuestion}"`);
   } else {
       console.log(`You need to ask a question!`);
       getQuestion();
